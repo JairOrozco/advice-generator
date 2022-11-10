@@ -1,0 +1,68 @@
+:root {
+  font-size: 62.5%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1f2632; }
+
+.advice {
+  width: 100%;
+  max-width: 350px;
+  position: relative;
+  padding: 30px 30px;
+  border-radius: 10px;
+  background: #323a49; }
+  .advice__numberContainer {
+    width: 100%;
+    padding: 0 0;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 1.2rem;
+    color: #52ffa8;
+    text-transform: uppercase;
+    letter-spacing: 4px; }
+  .advice__content {
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #cee3e9; }
+  .advice__containerDivider {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 25px 0; }
+    .advice__containerDivider img {
+      width: 100%; }
+  .advice__diceContainer {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: calc(50% - 30px);
+    border-radius: 60px;
+    background: #52ffa8; }
+    .advice__diceContainer img {
+      width: 25px; }
+
+@media (min-width: 1024px) {
+  .advice {
+    max-width: 450px; }
+    .advice__diceContainer:hover {
+      cursor: pointer;
+      box-shadow: 6px 5px 28px 4px rgba(81, 255, 168, 0.41), -6px -5px 28px 4px rgba(81, 255, 168, 0.41); } }
